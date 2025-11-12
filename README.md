@@ -33,13 +33,14 @@ you can find the poster  pdf [here](docs/Nine%20Mens%20Morris%20mill%20game.pdf)
 git clone https://github.com/richarddushime/nine_mens_morris_mill_game.git
 cd nine_mens_morris_mill_game
 ```
+2. Create and setup a virtual environment.
 
-2. Install dependencies:
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Install famnit-gym:
+4. Install famnit-gym:
 ```bash
 pip install famnit_gym@git+https://github.com/DomenSoberlFamnit/famnit-gym
 ```

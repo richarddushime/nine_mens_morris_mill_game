@@ -10,6 +10,9 @@ This project implements an AI agent for Nine Men's Morris (Mill) game using:
 - **Human-AI gameplay** support
 - **Performance analysis** and tournament system
 
+## Poster 
+you can find the poster presentation [here](docs/Nine%20Mens%20Morris%20mill%20game.pdf)
+
 ## Requirements
 
 - Python 3.8+

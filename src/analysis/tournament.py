@@ -121,7 +121,7 @@ class Tournament:
     
     def run_tournament(self, 
                       difficulties: List[Difficulty],
-                      games_per_match: int = 10) -> Dict:
+                      games_per_match: int = 2) -> Dict:
         """
         Run a round-robin tournament.
         

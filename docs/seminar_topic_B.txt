@@ -1,0 +1,30 @@
+Seminar topic B
+Zahteve zaključka
+Playing Nine men's morris (Mill)
+Implement an intelligent agent to play the Nine men's morris game.
+
+
+1. Adversarial search (0 - 5 points)
+Implement the minimax algorithm with alpha-beta pruning to play the game. What utility function did you use to estimate the value of a node?
+Did you have to limit the search depth to play the game in a feasible time? Presents the plots of how the search time decreases by limiting the depth.
+By playing perfectly, an agent should never lose a game (but can end up in a draw). Let two instances of your agent compete against each other. What happens?
+
+2. Different difficulties (0 - 5 points)
+Research possible ways to implement different difficulties of your AI player, e.g. let it make occasional mistakes, limit search, etc.
+Implement at least three different difficulties and make them compete against each other. Present the results.
+
+3. Playing with a human (0 - 5 points)
+Use the User Interaction wrapper to implement human - AI game play.
+Can you beat any of your AI agents (maybe one of a lower difficulty)?
+
+4. Source code + presentation (0 - 5 points)
+Use the famnit-gym package to implement the Mill environment. Do not use any other libraries.
+All search algorithms must be implemented by you in Python. No external libraries or 3rd party code is allowed.
+Create a poster in PDF format that presents your work and your findings. Follow the templates for conference posters.
+Have a 10 minute presentation together with your colleague. Attendance and presentation is necessary to pass the seminar work.
+Submission
+
+Submit 3 files to the e-classroom: (1) The ZIP file with the working Python code. (2) The PDF of the poster. (3) A markdown file, giving short instructions on how to run your examples.
+The files must be named using the following pattern: <group number>_IS_Seminar1_<last name 1>_<last name 2>.[zip | pdf | md]
+The deadline for submission is 3 days before the presentations.
+Zadnja sprememba: sreda, 29. oktober 2025, 11.22

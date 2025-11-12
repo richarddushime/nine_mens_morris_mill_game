@@ -119,4 +119,3 @@ class GameUtils:
         if capture > 0:
             result += f" (capture {capture})"
         return result
-

@@ -64,8 +64,9 @@ python examples/tournament.py
 
 This will:
 - Run matches between Easy, Medium, and Hard AI difficulties
-- Play 10 games per match
-- Display results in the console
+
+![Tournament](results/statistics/Tournament.png)
+
 - Save results to `results/statistics/tournament_results.json`
 
 **Expected output:** Tournament results showing wins, losses, and draws for each difficulty matchup.
@@ -79,11 +80,14 @@ python examples/depth_analysis.py
 ```
 
 This will:
-- Test search depths from 1 to 8
+- Test search depths
 - Measure average time per move and nodes evaluated
 - Generate plots showing:
   - Search time vs depth
   - Nodes evaluated vs depth
+
+![Depths Analysis](results/plots/depth_analysis_1.png)
+
 - Save plots to `results/plots/depth_analysis.png`
 
 **Note:** This may take several minutes to complete.
@@ -97,70 +101,14 @@ Test perfect AI vs perfect AI:
 ```bash
 python examples/self_play.py
 ```
+![Selfplay](results/statistics/self_play.png)
 
 This will:
-- Run 20 games between two Hard AI agents
+- Run  games between two Hard AI agents
 - Analyze draw rate (perfect play should result in draws)
 - Display statistics
 
 **Expected output:** Statistics showing total games, draws, draw rate, and average game time.
-
-## Project Structure
-
-```
-nine_mens_morris_mill_game/
-├── src/                    # Source code (all algorithms self-implemented)
-│   ├── ai/                 # AI algorithms
-│   │   ├── minimax.py      # Minimax with alpha-beta pruning
-│   │   ├── utility.py      # Utility function
-│   │   └── difficulties.py # Difficulty levels
-│   ├── game/               # Game utilities
-│   └── analysis/           # Analysis tools
-├── examples/                # Example scripts
-│   ├── basic_game.py       # AI vs AI
-│   ├── human_vs_ai.py      # Human vs AI
-│   ├── tournament.py       # Tournament
-│   ├── depth_analysis.py    # Depth analysis
-│   └── self_play.py        # Self-play
-└── results/                 # Generated results
-    ├── plots/              # Performance plots
-    └── statistics/         # Tournament results
-```
-
-## Implementation Notes
-
-### Adversarial Search (Requirement 1)
-- **Minimax algorithm**: Implemented in `src/ai/minimax.py`
-- **Alpha-beta pruning**: Included in minimax implementation
-- **Utility function**: Defined in `src/ai/utility.py` with components:
-  - Piece count difference
-  - Number of mills formed
-  - Mobility (available moves)
-  - Phase bonuses
-  - Threat detection
-- **Depth limiting**: Configurable via `max_depth` parameter
-- **Depth analysis**: Run `examples/depth_analysis.py` for plots
-- **Self-play**: Run `examples/self_play.py` to test perfect AI vs perfect AI
-
-### Different Difficulties (Requirement 2)
-- **Three difficulty levels**: Easy, Medium, Hard (implemented in `src/ai/difficulties.py`)
-- **Easy**: Limited depth (2), 30% random moves
-- **Medium**: Moderate depth (4), 15% random moves
-- **Hard**: Full depth (6), no random moves
-- **Tournament**: Run `examples/tournament.py` to compare difficulties
-
-### Human Interaction (Requirement 3)
-- **User Interaction wrapper**: Used in `examples/human_vs_ai.py`
-- **Controls**: Mouse clicks and keyboard input
-- **Play against any difficulty**: Modify the difficulty in `human_vs_ai.py`
-
-## Troubleshooting
-
-### Performance Issues
-If examples run too slowly:
-- Reduce search depth in difficulty settings
-- Reduce number of games in tournament
-- Use `render_mode=None` for faster execution (modify examples)
 
 ## Contact
 

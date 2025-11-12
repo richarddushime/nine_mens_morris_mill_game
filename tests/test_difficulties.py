@@ -21,6 +21,3 @@ def test_difficulty_initialization():
     
     assert ai_easy.random_prob >= ai_medium.random_prob
     assert ai_medium.random_prob >= ai_hard.random_prob
-
-
-

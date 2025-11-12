@@ -33,8 +33,8 @@ class MillAI:
         
         Args:
             difficulty: AI difficulty level
-            utility_function: Custom utility function (optional)
-            custom_depth: Custom search depth (optional)
+            utility_function: Custom utility function
+            custom_depth: Custom search depth
         """
         self.difficulty = difficulty
         
@@ -126,4 +126,3 @@ class MillAI:
         stats['max_depth'] = self.max_depth
         stats['random_prob'] = self.random_prob
         return stats
-

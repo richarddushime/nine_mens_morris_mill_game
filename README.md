@@ -11,7 +11,11 @@ This project implements an AI agent for Nine Men's Morris (Mill) game using:
 - **Performance analysis** and tournament system
 
 ## Poster 
-you can find the poster presentation [here](docs/Nine%20Mens%20Morris%20mill%20game.pdf)
+
+![Poster Image](docs/poster_presentation.png)
+
+you can find the poster  pdf [here](docs/Nine%20Mens%20Morris%20mill%20game.pdf)
+
 
 ## Requirements
 
@@ -20,7 +24,7 @@ you can find the poster presentation [here](docs/Nine%20Mens%20Morris%20mill%20g
 - numpy, gymnasium, pettingzoo (dependencies of famnit-gym)
 - matplotlib (for generating performance plots)
 
-**Important:** Only the famnit-gym package is used for the game environment, as required by the assignment.
+**Important:** Only the famnit-gym package is used for the game environment.
 
 ## Installation
 
@@ -38,19 +42,6 @@ pip install -r requirements.txt
 3. Install famnit-gym:
 ```bash
 pip install famnit_gym@git+https://github.com/DomenSoberlFamnit/famnit-gym
-```
-
-## Project Structure
-
-```
-nine_mens_morris_mill_game/
-├── src/              # Source code
-│   ├── ai/          # AI algorithms
-│   ├── game/        # Game logic
-│   └── analysis/    # Analysis tools
-├── examples/         # Example scripts
-├── tests/           # Unit tests
-└── results/         # results
 ```
 
 ## Quick Start
@@ -99,7 +90,7 @@ python examples/depth_analysis.py
 
 ## Documentation
 
-- [Instructions for Running Examples](INSTRUCTIONS.md) - **Required for submission**
+- [Instructions for Running Examples](INSTRUCTIONS.md)
 
 ## Authors
 

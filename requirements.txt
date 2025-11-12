@@ -1,4 +1,4 @@
-# Note: These are dependencies of famnit-gym package (required by assignment)
+# Note: These are dependencies of famnit-gym package
 numpy>=1.21.0
 gymnasium>=1.0.0
 pettingzoo>=1.24.0
@@ -12,6 +12,6 @@ imageio-ffmpeg>=0.4.8
 # Testing
 pytest>=7.0.0
 
-# IMPORTANT: All search algorithms (minimax, alpha-beta pruning) are 
-# self-implemented in Python. No external AI or search libraries are used.
-# Only the famnit-gym package is used for the game environment, as required.
+# IMPORTANT: 
+# the famnit-gym package is used for the game environmen
+# installation instructions can be found in the README.md file.

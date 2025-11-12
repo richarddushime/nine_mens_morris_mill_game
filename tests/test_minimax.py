@@ -27,5 +27,3 @@ def test_minimax_statistics():
     assert 'nodes_evaluated' in stats
     assert 'pruning_count' in stats
     assert 'pruning_ratio' in stats
-
-

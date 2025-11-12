@@ -15,14 +15,14 @@ class Statistics:
     """
     
     @staticmethod
-    def analyze_depth_performance(max_depth: int = 8, 
-                                  num_tests: int = 10) -> Dict:
+    def analyze_depth_performance(max_depth: int = 6, 
+                                  num_tests: int = 3) -> Dict:
         """
         Analyze search performance vs depth.
         
         Args:
-            max_depth: Maximum depth to test
-            num_tests: Number of test positions per depth
+            max_depth: Maximum depth to test (recommended: 6 or less)
+            num_tests: Number of test positions per depth (recommended: 3 or less)
         
         Returns:
             Dictionary with depth vs time data
@@ -36,11 +36,15 @@ class Statistics:
         env = mill.env(render_mode=None)
         env.reset()
         
+        print(f"Testing depths 1-{max_depth} with {num_tests} tests per depth...")
+        print("Progress: ", end="", flush=True)
+        
         for depth in depths:
+            print(f"Depth {depth}... ", end="", flush=True)
             times = []
             total_nodes = 0
             
-            for _ in range(num_tests):
+            for test_num in range(num_tests):
                 model = mill.transition_model(env)
                 player = 1
                 
@@ -53,9 +57,13 @@ class Statistics:
                 
                 times.append(elapsed)
                 total_nodes += ai.minimax_ai.nodes_evaluated
+                
+                # Show progress for each test
+                print(f"({test_num+1}/{num_tests}) ", end="", flush=True)
             
             avg_times.append(sum(times) / len(times))
             nodes_evaluated.append(total_nodes / num_tests)
+            print(f"Done (avg: {avg_times[-1]:.2f}s)", flush=True)
         
         return {
             'depths': depths,

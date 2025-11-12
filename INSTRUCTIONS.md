@@ -8,6 +8,8 @@ For More Information and to keep update informations refer to the this repositor
 
 1. Python 3.8 or higher.
 
+2. creating and Setting up a virtual environnement is neccessary()
+
 2. **Install required packages:**
    ```bash
    pip install -r requirements.txt

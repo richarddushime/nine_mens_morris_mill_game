@@ -2,9 +2,11 @@
 
 This document provides instructions on how to run the examples for the Nine Men's Morris (Mill) AI implementation.
 
+For More Information and to keep update informations refer to the this repository [here](https://github.com/richarddushime/nine_mens_morris_mill_game)
+
 ## Prerequisites
 
-1. **Python 3.8 or higher** must be installed on your system.
+1. Python 3.8 or higher.
 
 2. **Install required packages:**
    ```bash
